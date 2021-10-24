@@ -1,0 +1,43 @@
+.slide img {
+    max-width: 100%;
+    position: absolute;
+}
+
+.slide {
+    transition: all 1000ms;
+}
+
+#my-slider div {
+    opacity: 0;
+}
+
+.menu {
+    position: absolute;
+}
+
+
+/* 
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+} */
+
+@media (max-width: 768px) {
+    .slide__image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .slider {
+        overflow: hidden;
+        position: relative;
+        padding-top: 100%;
+    }
+}
