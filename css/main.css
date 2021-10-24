@@ -7,6 +7,63 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
+a {
+    text-decoration: none;
 }
+
+.header {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    right: 0;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-top {
+    grid-column: 1/2;
+    margin-left: 4rem;
+}
+
+.main-nav__list {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-nav__link {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.main-nav__link a {
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.3rem 2rem 1rem 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.main-nav__link:last-child {
+    background-color: var(--primary-tint-1);
+    margin-left: auto;
+    margin-right: 15rem;
+}
+
+.booking-mini {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    z-index: 20;
+}
+
+.select-mini {}

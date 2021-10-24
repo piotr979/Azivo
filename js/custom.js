@@ -1,9 +1,9 @@
 (function() {
 
     // SLIDER 
-    const slider = document.getElementById("my-slider");
-    const slides = slider.children;
-
+    const slides = document.querySelectorAll("#my-slider > .slide");
+    // const slides = slider.children;
+    console.log(slides);
     slides.item(0).style.opacity = 1;
     const slidesCount = slides.length;
     let currentSlide = 0;
