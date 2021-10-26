@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
     <!---- owl carousel --->
 
     <title>Azivo hotels</title>
@@ -34,30 +35,54 @@
             </nav>
         </header>
 
-        <div class="dark-overlay"></div>
+        <!-- <div class="dark-overlay"></div> -->
         <div class="slide">
-
-            <img class="slide__image" src="images/slider/alexander-kaunas-67-sOi7mVIk-unsplash.jpg " alt=" ">
+            <div class="slide-text">
+                <h4>Indulge yourself</h4>
+                <h2 class="slide-text__head">It is time to celebrate</h2>
+                <a href="index.php" class="btn btn-slider">Find out more</a>
+            </div>
+            <div class="slide-overlay">
+                <img class="slide__image" src="images/slider/alexander-kaunas-67-sOi7mVIk-unsplash.jpg " alt=" ">
+            </div>
         </div>
         <div class="slide">
-            <img class="slide__image" src="images/slider/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg " alt=" ">
+            <div class="slide-overlay">
+                <img class="slide__image" src="images/slider/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg " alt=" ">
+            </div>
         </div>
         <div class="slide">
-            <img class="slide__image" src="images/slider/anmol-seth-hDbCjHNdF48-unsplash.jpg " alt=" ">
+            <div class="slide-overlay">
+                <img class="slide__image" src="images/slider/anmol-seth-hDbCjHNdF48-unsplash.jpg " alt=" ">
+            </div>
         </div>
 
         <div class="booking-mini">
-            <form action="" method="post">
-                <select name="city" id="city">
+            <form class="booking-mini__form" action="" method="post">
+                <select class="booking-mini__select" name="city" id="city">
+                    <option value="All" >All cities</option>
                     <option value="Rome">Rome</option>
                     <option value="Chicago">Chicago</option>
+               
                 </select>
+
+                <input class="booking-mini__date" name="check_in" type="text" placeholder="Check in">
+
+
+                <input class="booking-mini__date" name="check_out" type="text" placeholder="Check out">
+
+                <input class="booking-mini__number" type="number" min="1" max="25" name="adults" placeholder="Adults">
+                <input class="booking-mini__number" type="number" min="0" max="8" name="children" placeholder="Children">
+
+                <button class="btn booking-mini__submit">Book now</button>
+
             </form>
         </div>
 
     </div>
     <h1>This is text</h1>
     <h1>This is another text</h1>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script src="js/custom.js "></script>
 
 </body>

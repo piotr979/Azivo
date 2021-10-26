@@ -11,6 +11,36 @@ a {
     text-decoration: none;
 }
 
+
+/* ************************
+/* *** REUSABLE COMPONENTS
+/* ************************ */
+
+.btn:link,
+.btn:visited {
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+
+.btn-slider {
+    transition: all .4s;
+}
+
+.btn-slider:link,
+.btn-slider:visited {
+    color: white;
+    background-color: transparent;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    padding: 1.3rem 2rem .9rem 2rem;
+}
+
+.btn-slider:hover {
+    border-width: 4px;
+    padding: 1.6rem 2.3 1.2rem 2.3rem;
+    letter-spacing: 2px;
+}
+
 .header {
     position: absolute;
     z-index: 20;
@@ -30,11 +60,10 @@ a {
 }
 
 .main-nav__list {
-    grid-column: 2/3;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .main-nav__link {
@@ -60,10 +89,136 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
+    height: 8rem;
+    color: white;
     display: flex;
     flex-direction: row;
-    color: white;
+    align-items: center;
+    justify-content: center;
     z-index: 20;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.select-mini {}
+
+/* Always display the drop down caret */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: white;
+}
+
+
+/* A few custom styles for date inputs */
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/* **********
+/* Removes the clear button from date inputs */
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+
+/* Removes the spin button */
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block !important;
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+    visibility: visible !important;
+}
+
+input[type="date"],
+focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.booking-mini__form {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.booking-mini__select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15rem;
+    border-top: none;
+    -webkit-border-radius: 0px !important;
+}
+
+.booking-mini__date,
+.booking-mini__select,
+.booking-mini__number {
+    height: 2rem;
+    border: none;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.6rem;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.booking-mini__submit {
+    background-color: var(--primary-tint-1);
+    padding: 1.3rem 2rem 1rem 2rem;
+    color: white;
+    border: none;
+    font-family: 'Gill Sans', sans-serif;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.booking-mini__number {
+    width: 8rem;
+}
+
+.booking-mini__form>input:focus {
+    border-bottom: solid 1px var(--primary-tint-1);
+    outline: none;
+}
+
+.booking-mini__form input::placeholder {
+    color: white;
+    opacity: 1;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+optgroup {
+    color: transparent;
+    height: 0px;
+    background-color: black;
+}
+
+optgroup[label="City"] {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}

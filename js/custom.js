@@ -19,4 +19,12 @@
 
         , 3600);
 
+    const check_in = document.querySelector('input[name="check_in"]');
+    const check_out = document.querySelector('input[name="check_out"]');
+    const datepicker_in = new Datepicker(check_in, {
+        // ...options
+    });
+    const datepicker_out = new Datepicker(check_out, {
+        // ...options
+    });
 })();
