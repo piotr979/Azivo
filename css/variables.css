@@ -1,9 +1,11 @@
 :root {
     --primary-color: #144E74;
+    --primary-tint-0: #238BD1;
     --primary-tint-1: #3298DC;
     --gray-1: #3F3F3F;
     --gray-2: #7D7D7D;
     --gray-3: #C1C1C1;
     --gray-4: #DCDCDC;
     --shadow-color-1: #A2A2A2;
+    --across-color: #E69D35;
 }

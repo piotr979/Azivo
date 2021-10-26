@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="33px" viewBox="0 0 84 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo Copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset" transform="translate(-93.000000, -3124.000000)">
+            <g id="Footer" transform="translate(0.000000, 3095.000000)">
+                <g id="Group-1" transform="translate(91.000000, 29.000000)">
+                    <g id="Logo-Copy" transform="translate(4.000000, 0.000000)">
+                        <text id="Azivo" font-family="GillSans-SemiBold, Gill Sans" font-size="28" font-weight="500" fill="#3F3F3F">
+                            <tspan x="12" y="26">Azivo</tspan>
+                        </text>
+                        <line x1="14" y1="7" x2="6" y2="25" id="Line-Copy" stroke="#3298DC" stroke-width="2" stroke-linecap="square"></line>
+                        <line x1="8" y1="7" x2="-5.55111512e-15" y2="25" id="Line-Copy-2" stroke="#3298DC" stroke-width="2" stroke-linecap="square"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

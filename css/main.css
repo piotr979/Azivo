@@ -1,224 +1,429 @@
-@import 'typography.css';
-@import 'variables.css';
-@import 'my_slider.css';
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-
-/* ************************
+    @import 'typography.css';
+    @import 'variables.css';
+    @import 'my_slider.css';
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /* ************************
 /* *** REUSABLE COMPONENTS
 /* ************************ */
-
-.btn:link,
-.btn:visited {
-    padding: .5rem 1rem;
-    text-transform: uppercase;
-}
-
-.btn-slider {
-    transition: all .4s;
-}
-
-.btn-slider:link,
-.btn-slider:visited {
-    color: white;
-    background-color: transparent;
-    font-size: 1.6rem;
-    border: 1px solid white;
-    padding: 1.3rem 2rem .9rem 2rem;
-}
-
-.btn-slider:hover {
-    border-width: 4px;
-    padding: 1.6rem 2.3 1.2rem 2.3rem;
-    letter-spacing: 2px;
-}
-
-.header {
-    position: absolute;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    color: white;
-    display: flex;
-    right: 0;
-    padding: 1rem 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-top {
-    grid-column: 1/2;
-    margin-left: 4rem;
-}
-
-.main-nav__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
-}
-
-.main-nav__link {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.main-nav__link a {
-    color: white;
-    font-size: 1.4rem;
-    padding: 1.3rem 2rem 1rem 2rem;
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.main-nav__link:last-child {
-    background-color: var(--primary-tint-1);
-    margin-left: auto;
-    margin-right: 15rem;
-}
-
-.booking-mini {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 8rem;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    z-index: 20;
-    background: rgba(0, 0, 0, 0.4);
-}
-
-
-/* Always display the drop down caret */
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    color: white;
-}
-
-
-/* A few custom styles for date inputs */
-
-input[type="number"] {
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-}
-
-
-/* **********
+    
+    .container {
+        max-width: 130rem;
+        margin: 0 auto;
+    }
+    
+    .cols-2,
+    .cols-3,
+    .cols-4 {
+        display: grid;
+    }
+    
+    .cols-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .btn:link,
+    .btn:visited {
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+    }
+    
+    .btn-slider {
+        transition: all .4s;
+    }
+    
+    .btn-slider:link,
+    .btn-slider:visited {
+        color: white;
+        background-color: transparent;
+        font-size: 1.6rem;
+        border: 1px solid white;
+        padding: 1.3rem 2rem .9rem 2rem;
+    }
+    
+    .btn-slider:hover {
+        border-width: 4px;
+        padding: 1.6rem 2.3 1.2rem 2.3rem;
+        letter-spacing: 2px;
+    }
+    
+    .header {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        right: 0;
+        padding: 1rem 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-top {
+        grid-column: 1/2;
+        margin-left: 4rem;
+    }
+    
+    .main-nav__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+    
+    .main-nav__link {
+        list-style-type: none;
+        display: inline-block;
+    }
+    
+    .main-nav__link a {
+        color: white;
+        font-size: 1.4rem;
+        padding: 1.3rem 2rem 1rem 2rem;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    
+    .main-nav__link:last-child {
+        background-color: var(--primary-tint-1);
+        margin-left: auto;
+        margin-right: 15rem;
+    }
+    
+    .booking-mini {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 8rem;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    /* Always display the drop down caret */
+    
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        color: white;
+    }
+    /* A few custom styles for date inputs */
+    
+    input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    /* **********
 /* Removes the clear button from date inputs */
-
-input[type="date"]::-webkit-clear-button {
-    display: none;
-}
-
-
-/* Removes the spin button */
-
-input[type="date"]::-webkit-inner-spin-button {
-    display: none;
-}
-
-input[type="date"] {
-    appearance: none;
-    -webkit-appearance: none;
-    display: inline-block !important;
-    font-family: "Gill Sans", sans-serif;
-    color: white;
-    visibility: visible !important;
-}
-
-input[type="date"],
-focus {
-    color: #95a5a6;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-}
-
-.booking-mini__form {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    flex-direction: row;
-}
-
-.booking-mini__select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15rem;
-    border-top: none;
-    -webkit-border-radius: 0px !important;
-}
-
-.booking-mini__date,
-.booking-mini__select,
-.booking-mini__number {
-    height: 2rem;
-    border: none;
-    font-family: "Gill Sans", sans-serif;
-    font-size: 1.6rem;
-    background: transparent;
-    border-bottom: 1px solid white;
-    color: white;
-}
-
-.booking-mini__submit {
-    background-color: var(--primary-tint-1);
-    padding: 1.3rem 2rem 1rem 2rem;
-    color: white;
-    border: none;
-    font-family: 'Gill Sans', sans-serif;
-    cursor: pointer;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-
-.booking-mini__number {
-    width: 8rem;
-}
-
-.booking-mini__form>input:focus {
-    border-bottom: solid 1px var(--primary-tint-1);
-    outline: none;
-}
-
-.booking-mini__form input::placeholder {
-    color: white;
-    opacity: 1;
-    font-family: 'Gill Sans', sans-serif;
-    font-size: 1.6rem;
-}
-
-optgroup {
-    color: transparent;
-    height: 0px;
-    background-color: black;
-}
-
-optgroup[label="City"] {
-    color: white;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-}
+    
+    input[type="date"]::-webkit-clear-button {
+        display: none;
+    }
+    /* Removes the spin button */
+    
+    input[type="date"]::-webkit-inner-spin-button {
+        display: none;
+    }
+    
+    input[type="date"] {
+        appearance: none;
+        -webkit-appearance: none;
+        display: inline-block !important;
+        font-family: "Gill Sans", sans-serif;
+        color: white;
+        visibility: visible !important;
+    }
+    
+    input[type="date"],
+    focus {
+        color: #95a5a6;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    
+    .booking-mini__form {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .booking-mini__select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15rem;
+        border-top: none;
+        -webkit-border-radius: 0px !important;
+    }
+    
+    .booking-mini__date,
+    .booking-mini__select,
+    .booking-mini__number {
+        height: 2rem;
+        border: none;
+        font-family: "Gill Sans", sans-serif;
+        font-size: 1.6rem;
+        background: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+    
+    option {
+        background-color: white;
+        color: black;
+    }
+    
+    .booking-mini__submit {
+        background-color: var(--primary-tint-1);
+        padding: 1.3rem 2rem 1rem 2rem;
+        color: white;
+        border: none;
+        font-family: 'Gill Sans', sans-serif;
+        cursor: pointer;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    
+    .booking-mini__number {
+        width: 8rem;
+    }
+    
+    .booking-mini__form>input:focus,
+    .booking-mini__form>select:focus {
+        border-bottom: solid 2px var(--primary-tint-1);
+        outline: none;
+    }
+    
+    .booking-mini__form input::placeholder {
+        color: white;
+        opacity: 1;
+        font-family: 'Gill Sans', sans-serif;
+        font-size: 1.6rem;
+    }
+    
+     ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: white;
+    }
+    
+    .section-welcome,
+    .section-deals,
+    .section-facilities,
+    .section-testimonials {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
+    
+    h3.heading {
+        display: block;
+        margin-bottom: 8rem;
+    }
+    
+    .section-welcome img {
+        fill: var(--gray-3);
+        stroke: var(--gray-3);
+    }
+    
+    .welcome-cols {
+        gap: 4rem;
+    }
+    
+    .welcome-cols div:first-child {
+        grid-column: 1/2;
+        justify-self: end;
+        text-align: left;
+        width: 80%;
+        padding-top: 4rem;
+    }
+    
+    .welcome-cols div:last-child {
+        grid-column: 2/3;
+    }
+    
+    .welcome-cols:last-child img {
+        width: 40rem;
+        height: auto;
+        box-shadow: 0 4px 16px var(--gray-3);
+    }
+    
+    .deal-cols {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: columns;
+        justify-content: space-between;
+    }
+    
+    .deal {
+        width: 22%;
+        box-shadow: 0 4px 16px var(--gray-4);
+        text-align: left
+    }
+    
+    .deal__image {
+        width: 100%;
+    }
+    
+    .deal-details {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    
+    p.bolder-left {
+        font-size: 2rem;
+        font-family: "Gill Sans Medium", sans-serif;
+        text-align: left;
+    }
+    
+    p.deal-details--subtext {
+        display: block;
+        padding-top: .5rem;
+        font-size: 1.4rem;
+        color: var(--gray-3);
+    }
+    
+    p.deal-expiring {
+        font-size: 1.4rem;
+        display: block;
+        padding-top: .5rem;
+        color: var(--across-color);
+    }
+    
+    a.deal__link {
+        color: var(--primary-tint-0);
+        text-transform: uppercase;
+        display: block;
+        font-size: 1.2rem;
+        font-family: "Gill Sans Medium";
+        margin-top: 6rem;
+    }
+    
+    .facilities {
+        justify-items: center;
+    }
+    
+    .facilities__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .facilities__item p {
+        display: block;
+        padding: .8rem 0 0 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .facilities__item img {
+        width: 5rem;
+        height: auto;
+    }
+    
+    .section-featured-hotels {
+        background-image: linear-gradient(134deg, #154961 0%, #092232 100%);
+    }
+    
+    .featured-hotels--heading {
+        grid-column: 1 / -1;
+        text-align: center;
+        grid-row: 1 / 2;
+    }
+    
+    .featured-hotel__item {
+        color: white;
+    }
+    
+    .bolder-light {
+        font-size: 2rem;
+        display: block;
+        padding: 1rem 0 1rem 0;
+    }
+    
+    .featured-hotels {
+        column-gap: 4rem;
+        padding: 1rem 0 4rem 0;
+    }
+    
+    .featured-hotel__item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .featured-hotel__item--details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    
+    .featured-hotel__item--details span {
+        font-size: 1.4rem;
+    }
+    
+    .featured-hotel__item--details div:last-child {
+        margin-left: auto;
+    }
+    
+    .featured-hotel__item--details img {
+        width: 1.2rem;
+        position: relative;
+        height: auto;
+    }
+    
+    .featured-hotel__item--details div img {
+        top: 1px;
+    }
+    
+    .testimonial-cols {
+        gap: 10rem;
+    }
+    
+    .testimonial__item {
+        text-align: center;
+    }
+    
+    .testimonial__item img {
+        width: 10rem;
+        box-shadow: 0 4px 16px var(--gray-3);
+        margin-bottom: 2rem;
+    }
+    
+    .testimonial__image--wrapper {
+        width: 20rem;
+        margin: 0 auto;
+        border-bottom: 3px solid var(--primary-tint-0);
+        margin-bottom: 2rem;
+    }
+    
+    .testimonial__item--signature {
+        text-align: right;
+        padding: 2rem 2rem;
+        font-family: "Gill Sans Italic"
+    }
