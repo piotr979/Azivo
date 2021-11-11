@@ -685,6 +685,9 @@
     }
     /** 48em = 768 px when 16px */
     @media (max-width: 48em) {
+        h3.heading {
+            margin-bottom: 4rem;
+        }
         .cols-2 {
             grid-template-columns: 1fr;
         }
@@ -709,6 +712,9 @@
         }
         .facilities {
             justify-items: center;
+    }
+    .facilities-column {
+        width: 20rem;
     }
     .footer--column:first-child {
         grid-column: 1/2;
@@ -771,9 +777,6 @@
     .testimonial-cols {
         width: 100%;
     }
-    h3.heading {
-        margin-bottom: 4rem;
-    }
     .welcome-cols:last-child img {
         width: 100%;
     }
@@ -786,5 +789,8 @@
     }
     .btn-slider:link, .btn-slider:visited {
         font-size: 1rem;
+    }
+    .facilities {
+        justify-items: start;
     }
 }
