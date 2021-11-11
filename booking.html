@@ -15,12 +15,15 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header-static">
+        
+        <div class="header-static--top">
+      <div class="header-static--logo">
         <a class="logo-top" href="#index.html">
             <img src="images/logo.svg" alt="Azivo hotels logo">
         </a>
-
-        <nav class="main-nav">
+    </div>
+        <nav class="header-static--main-nav main-nav">
             <ul class="main-nav__list">
                 <li class="main-nav__link"><a href="index.html">Home</a></li>
                 <li class="main-nav__link"><a href="hotels.html">Our hotels</a></li>
@@ -30,73 +33,27 @@
             </ul>
            
         </nav>
-
-        <button class="btn-mobile-nav">
+        <button class="header-static-mobile-nav btn-mobile-nav">
             <img class="open-mobile-nav icon-mobile-nav" src="images/icons/nav/hamburger.svg" alt="Open mobile menu">
             <img class="close-mobile-nav icon-mobile-nav" src="images/icons/nav/close_big.svg" alt="Close mobile menu">
         </button>
-    </header>
-    <div id="my-slider" class="slider">
-
-
-      
-
-        <!-- <div class="dark-overlay"></div> -->
-        <div class="slide">
-            <div class="slide-text">
-                <h4 class="slide-text__subhead animate__animated animate__slideInUp">Indulge yourself</h4>
-                <h2 class="slide-text__head animate__animated animate__slideInUp">It is time to celebrate</h2>
-                <a href="index.php" class="btn btn-slider">Find out more</a>
-            </div>
-            <div class="slide-overlay">
-                <img class="slide__image" src="images/slider/alexander-kaunas-67-sOi7mVIk-unsplash.jpg " alt=" ">
-            </div>
-        </div>
-        <div class="slide">
-            <div class="slide-text">
-                <h4 class="slide-text__subhead animate__animated">Check our offer</h4>
-                <h2 class="slide-text__head animate__animated">Beautiful holiday in your hands</h2>
-                <a href="index.php" class="btn btn-slider">Find out more</a>
-            </div>
-            <div class="slide-overlay">
-                <img class="slide__image" src="images/slider/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg " alt=" ">
-            </div>
-        </div>
-        <div class="slide">
-            <div class="slide-text">
-                <h4 class="slide-text__subhead animate__animated">Reasonably priced</h4>
-                <h2 class="slide-text__head animate__animated">Have a great time with your family</h2>
-                <a href="index.php" class="btn btn-slider">Find out more</a>
-            </div>
-
-            <div class="slide-overlay">
-                <img class="slide__image" src="images/slider/anmol-seth-hDbCjHNdF48-unsplash.jpg " alt=" ">
-            </div>
-        </div>
-
-        <div class="booking-mini">
-            <form class="booking-mini__form" action="" method="post">
-                <select class="booking-mini__select" name="city" id="city">
-                    <option value="All">All cities</option>
-                    <option value="Rome">Rome</option>
-                    <option value="Chicago">Chicago</option>
-               
-                </select>
-
-                <input class="booking-mini__date" name="check_in" type="text" placeholder="Check in">
-
-
-                <input class="booking-mini__date" name="check_out" type="text" placeholder="Check out">
-
-                <input class="booking-mini__number" type="number" min="1" max="25" name="adults" placeholder="Adults">
-                <input class="booking-mini__number" type="number" min="0" max="8" name="children" placeholder="Children">
-
-                <button class="btn booking-mini__submit">Book now</button>
-
-            </form>
-        </div>
-
+       
     </div>
+        <div class="header-static--heading">
+           
+            <h2 class="header-static__head">Booking</h2>
+            <h4 class="header-static__subhead">Find your dream hotel</h4>
+        
+        </div>
+    </header>
+ 
+    <section class="section-booking">
+        <img src="images/ornament.svg" class="ornament" alt="">
+        <h3 class="dark heading">
+            Welcome to Azivo hotels
+        </h3>
+    </section>
+    
     <section class="section-welcome">
         <img src="images/ornament.svg" class="ornament" alt="">
         <h3 class="dark heading">

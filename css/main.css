@@ -88,7 +88,32 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+    .header-static {
+        display: grid;
+        margin: 0 auto;
+        padding: 1rem 0;
+        position: relative;
+        justify-content: center;
+        align-items:center;
+        row-gap: 4rem;
+        grid-template-columns: repeat(12, 1fr);
+        background: linear-gradient( rgba(0,0,0,.4) , rgba(0,0,0,.6)), url('../images/the-anam-_twiIcIsp2s-unsplash.jpg') ;
+    }
+    .header-static--top {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        display: flex;
+        align-items:center;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .header-static--heading {
+        grid-column: 1/-1;
+        justify-self: center;
+        text-align: center;
+        grid-row: 2/3;
+    }
     .logo-top {
         grid-column: 1/2;
         margin-left: 4rem;
@@ -256,7 +281,8 @@
     .section-welcome,
     .section-deals,
     .section-facilities,
-    .section-testimonials {
+    .section-testimonials,
+    .section-booking {
         margin: 0 auto;
         text-align: center;
         margin-top: 8rem;
@@ -807,6 +833,9 @@
     h2.slide-text__head {
         font-size: 3rem;
         padding: 0rem 0 4rem 0;
+    }
+    h2.header-static__head {
+        font-size: 4rem;
     }
     .btn-slider:link, .btn-slider:visited {
         font-size: 1rem;
