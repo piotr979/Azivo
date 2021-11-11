@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
-    <!---- owl carousel --->
+    <!-- owl carousel -->
 
     <title>Azivo hotels</title>
 </head>
@@ -32,7 +32,13 @@
                     <li class="main-nav__link"><a href="index.html">Contact</a></li>
                     <li class="main-nav__link"><a href="index.html">Login / Sign in</a></li>
                 </ul>
+               
             </nav>
+
+            <button class="btn-mobile-nav">
+                <img class="open-mobile-nav icon-mobile-nav" src="images/icons/nav/hamburger.svg" alt="Open mobile menu">
+                <img class="close-mobile-nav icon-mobile-nav" src="images/icons/nav/close_big.svg" alt="Close mobile menu">
+            </button>
         </header>
 
         <!-- <div class="dark-overlay"></div> -->
@@ -158,6 +164,7 @@
         </h3>
         <div class="container cols-4 facilities">
 
+            <div class="mobile-column">
             <div class="facilities-column">
                 <div class="facilities__item">
                     <img src="images/icons/baggage.svg" alt="baggage icon">
@@ -169,7 +176,8 @@
                     <p>Barbeque</p>
                 </div>
             </div>
-
+           
+           
             <div class="facilities-column">
                 <div class="facilities__item">
                     <img src="images/icons/call_bell.svg" alt="call bell icon">
@@ -181,7 +189,9 @@
                     <p>Pay by card</p>
                 </div>
             </div>
-
+            </div>
+      
+        <div class="mobile-column">
             <div class="facilities-column">
                 <div class="facilities__item">
                     <img src="images/icons/direction.svg" alt="direction post icon">
@@ -206,6 +216,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="section-featured-hotels">
@@ -225,11 +236,11 @@
 
                 <div class="featured-hotel__item--details">
                     <div>
-                        <img src="images/icons/other/location.svg" alt="">
+                        <img src="images/icons/other/location.svg" alt="Hotel location icon">
                         <span>Diro, Indonesia</span>
                     </div>
                     <div>
-                        <img src="images/icons/other/calendar_check.svg" alt="">
+                        <img src="images/icons/other/calendar_check.svg" alt="Hotel's opening date">
                         <span>12 May 2020</span>
                     </div>
                 </div>
@@ -243,11 +254,11 @@
 
                 <div class="featured-hotel__item--details">
                     <div>
-                        <img src="images/icons/other/location.svg" alt="">
+                        <img src="images/icons/other/location.svg" alt="Hotel location icon">
                         <span>Havit, Morrocco</span>
                     </div>
                     <div>
-                        <img src="images/icons/other/calendar_check.svg" alt="">
+                        <img src="images/icons/other/calendar_check.svg" alt="Hotel's opening date">
                         <span>7 September 2021</span>
                     </div>
                 </div>
@@ -261,11 +272,11 @@
 
                 <div class="featured-hotel__item--details">
                     <div>
-                        <img src="images/icons/other/location.svg" alt="">
+                        <img src="images/icons/other/location.svg" alt="Hotel location icon">
                         <span>Crete, Greece</span>
                     </div>
                     <div>
-                        <img src="images/icons/other/calendar_check.svg" alt="">
+                        <img src="images/icons/other/calendar_check.svg" alt="Hotel's opening date">
                         <span>2 July 2029</span>
                     </div>
                 </div>
@@ -283,7 +294,7 @@
         <div class="container cols-2 testimonial-cols">
             <div class="testimonial__item">
                 <div class="testimonial__image--wrapper">
-                    <img src="images/people/person_1.jpg" alt="">
+                    <img src="images/people/person_1.jpg" alt="Portrait of person">
                 </div>
                 <p>“My busy schedule leaves little, if any, time for blogging and social media. The Lorem Ipsum Company has been a huge part of helping me grow my business through organic search and content marketing.”
                 </p>
@@ -294,7 +305,7 @@
 
             <div class="testimonial__item">
                 <div class="testimonial__image--wrapper">
-                    <img src="images/people/person_2.jpg" alt="">
+                    <img src="images/people/person_2.jpg" alt="Portrait of person">
                 </div>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores cumque molestiae aliquam? Ratione quo consectetur saepe, iure magnam nesciunt quasi recusandae ex perferendis aut ipsam officia incidunt, omnis quibusdam temporibus.
                 </p>
@@ -306,6 +317,43 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="container cols-4 footer--cols">
+            <div class="footer--column">
+                <img src="images/logo-dark.svg" alt="Azivo company logo" class="footer-logo">
+                <div class="footer-socials">
+                    <a href=""><img src="images/icons/social/facebook.svg" alt="Facebook icon"></a>
+                    <a href=""><img src="images/icons/social/instagram.svg" alt="Instagram icon"></a>
+                    <a href=""><img src="images/icons/social/google.svg" alt="Google icon"></a>
+                </div>
+                <p class="footer-copyright">Copyright &copy; 2021 by Azivo, Inc.<br>All rights reserved.</p>
+            </div>
+
+            <div class="footer--column">
+                <h6>About us </h6>
+                <p>Azivo is corporation group base in ZAE. For information please use contact page.</p>
+                <p>Terms and condition are available in hotels and on our website.</p>
+            </div>
+
+            <div class="footer--column">
+                <h6>Your Azivo</h6>
+                <ul class="footer__list">
+                    <li><a href="#">Log in / Sign in</a></li>
+                    <li><a href="#">Contact us </a></li>
+                    <li><a href="#">Terms and conds</a></li>
+                </ul>
+            </div>
+            <div class="footer--column">
+                <h6>Important links</h6>
+                <ul class="footer__list">
+                    <li><a href="#">Home page</a></li>
+                    <li><a href="#">Our hotels</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script src="js/custom.js "></script>
 
