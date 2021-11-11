@@ -104,7 +104,14 @@
     .main-nav__link {
         list-style-type: none;
         display: inline-block;
+        transition: all .4s;
     }
+    .main-nav__link:not(:last-child):hover {
+       box-shadow: 0px 0px 0px 1px #FFF;
+    }
+    .main-nav__link:last-child:hover {
+        background-color: var(--primary-tint-2);
+     }
     
     .main-nav__link a {
         color: white;
@@ -343,12 +350,20 @@
     }
     
     a.deal__link {
-        color: var(--primary-tint-0);
+        color: var(--gray-5);
         text-transform: uppercase;
+        width: 100%;
+        background-color: var(--primary-tint-0);
+        text-align: center;
+        padding: 1.3rem 0 1rem 0;
         display: block;
         font-size: 1.2rem;
         font-family: "Gill Sans Medium";
         margin-top: auto;
+        transition: all .4s;
+    }
+    a.deal__link:hover {
+        background-color: var(--primary-tint-1);
     }
     
     .facilities {
@@ -732,6 +747,12 @@
         grid-column:2/3;
         grid-row: 2/3;
     }
+    }
+
+    @media (max-width: 38em) {
+        .deal {
+            max-width: 70%;
+        }
     }
     /* 25em = 400px when 16px */
     @media (max-width: 25em) {

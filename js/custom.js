@@ -8,16 +8,36 @@
     const slidesCount = slides.length;
     let currentSlide = 0;
     let nextSlide = 1;
+
+    const slideText = document.querySelectorAll('.slide-text__head');
+    const slideSubText = document.querySelectorAll('.slide-text__subhead');
+    console.log(slideText);
     setInterval(function() {
 
 
             slides.item(currentSlide).style.opacity = 0;
             nextSlide = nextSlide == (slidesCount - 1) ? 0 : currentSlide + 1;
-            slides.item(nextSlide).style.opacity = 1;
+           
+            console.log(currentSlide);
+            console.log(slideText.length);
+           
+            if (currentSlide < slideText.length ) {
+            slideText[currentSlide].classList.remove("animate__slideInUp");
+            slideSubText[currentSlide].classList.remove("animate__slideInUp");
+            }
+             // here currentSlide is previous slide
             currentSlide = nextSlide;
+            slides.item(nextSlide).style.opacity = 1;
+
+            //if must be repeated for the some condition, need to find better way
+            if (currentSlide < slideText.length ) {
+                slideText[currentSlide].classList.add("animate__slideInUp");
+                slideSubText[currentSlide].classList.add("animate__slideInUp");
+                }
+           
         }
 
-        , 3600);
+        , 5000);
 
     const check_in = document.querySelector('input[name="check_in"]');
     const check_out = document.querySelector('input[name="check_out"]');
@@ -40,3 +60,13 @@ const header = document.querySelector('.header');
 btnNav.addEventListener('click', function() {
    header.classList.toggle('nav-open');
 })
+
+
+// owl.on('changed.owl.carousel', function (event) {
+//     var item = event.item.index - 2;     // Position of the current item
+//     console.log(owl);
+//     $('h2').removeClass('animate__slideInUp');
+
+//     $('.owl-item').not('.cloned').eq(item).find('h1').addClass('animate__slideInUp');
+//     console.log($('.owl-item').not('.cloned').eq(item).find('h1'));
+// });
