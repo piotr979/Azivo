@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>basic / location</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset" transform="translate(-81.000000, -2389.000000)">
+            <g id="See-new-hotels" transform="translate(-1.000000, 2010.000000)">
+                <g id="Hotel" transform="translate(78.000000, 112.000000)">
+                    <g id="basic-/-location" transform="translate(0.000000, 265.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="basic-/-location-(Background/Mask)"></g>
+                        <path d="M10,2.5 C6.7750001,2.5 4.16666667,5.10833343 4.16666667,8.33333333 C4.16666667,11.25 6.11111111,14.3055556 10,17.5 C13.8888889,14.3055556 15.8333333,11.25 15.8333333,8.33333333 C15.8333333,5.10833343 13.2249999,2.5 10,2.5 C7.85000006,2.5 7.85000006,2.5 10,2.5 Z M10,10.8333333 C11.3807122,10.8333333 12.5,9.71404552 12.5,8.33333333 C12.5,6.95262154 11.3807122,5.83333333 10,5.83333333 C8.61928821,5.83333333 7.5,6.95262154 7.5,8.33333333 C7.5,9.71404552 8.61928821,10.8333333 10,10.8333333 C10.9204748,10.8333333 10.9204748,10.8333333 10,10.8333333 Z" fill="#7D7D7D" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

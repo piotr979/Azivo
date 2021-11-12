@@ -24,6 +24,9 @@
     li {
         list-style-type: none;
     }
+    strong {
+        color: var(--gray-1);
+    }
     /* ************************
     /* *** REUSABLE COMPONENTS
     /* ************************ */
@@ -69,13 +72,14 @@
         border: 1px solid white;
         padding: 1.3rem 2rem .9rem 2rem;
     }
+
     
     .btn-slider:hover {
         border-width: 4px;
         padding: 1.6rem 2.3 1.2rem 2.3rem;
         letter-spacing: 2px;
     }
-    
+  
     .header {
         position: absolute;
         z-index: 20;
@@ -594,13 +598,143 @@
         width: 2.2rem;
         display: none;
     }
+    /* **************************
+    /* BOOKING PAGE
+    /* ************************** 
+    */
+
+.section-booking {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    text-align: left;
+    color: var(--gray-2);
+    gap: 8rem;
+}
+.booking-filters {
+    grid-column: 1/2;
+}
+.booking-filters--wrapper {
+    border: 1px solid var(--gray-5);
+    padding-top: 1rem;
+}
+.hotels {
+    grid-column: 2/3;
+}
+.hotels--cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+.hotels-sorting {
+    margin-bottom: 1rem;
+}
+.booking-filters h6 {
+    display: block;
+    padding-left: 1rem;
+    color: var(--gray-1);
+    padding-bottom: 2rem;
+}
+.filters-form--wrapper {
+    padding-left: 1rem;
+}
+
+
+
+.booking-filters label {
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem 0 1rem 0rem;
+}
+.booking-filters label input {
+    margin-right: 1rem;
+}
+.checkboxes-set {
+    margin-top: 2rem;
+}
+
+
+.hotels-sorting select, .booking-filters__select {
+    width: 15rem;
+    border: 1px solid var(--gray-4);
+    background-color: white;
+    padding: .5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
+}
+.booking-filters__submit {
+   
+   
+width:100%;
+background-color: var(--primary-tint-2);
+color: white;
+padding: 1rem 1.5rem;
+margin: 4rem 0rem 0rem 0rem;
+border: none;
+}
+.hotels--card {
+    max-width: 18%;
+    box-shadow: 0 4px 16px var(--gray-4);
+    text-align: left;
+    transition: all .4s;
+}
+.hotels--card-details {
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+.hotels--card-details__location {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: .5rem;
+    padding-bottom: .5rem;
+}
+.hotels--card-details__location img, .hotels--card-details__pricing img {
+    position: relative;
+}
+.hotels--card-details__location img {
+    top: -3px;
+}
+.hotels--card-details__pricing img {
+    top: 2px;
+    left: -4px;
+}
+.hotels--card__link {
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-color: var(--primary-tint-0);
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
 
     /* **************************
     /* RESPONSIVE MEDIA
     /* ************************** 
     */
 
+    /* 100 em = 1600px */
+
+    @media (max-width: 100em) {
+        .hotels {
+            gap: 4rem;
+        }
+        .hotels--card {
+            max-width: 25%;
+    }
+
+    /* 69em * 16 = 1104 px */
+
     @media (max-width: 69em) {
+        .hotels--card {
+            max-width: 40%;
+        }
         .main-nav__link:last-child {
             margin-right: 5rem;
         }
@@ -661,9 +795,14 @@
         }
     }
     @media (max-width: 56em) {
+        .hotels--card {
+            max-width: 80%;
+        }
+
         .featured-hotel__item--details img {
             width: 1.0rem;
         }
+
         .cols-3 {
             grid-template-columns: 1fr 1fr;
         }
@@ -779,7 +918,15 @@
         .deal {
             max-width: 70%;
         }
+        .featured-hotel__item--details {
+            flex-direction: column;
+            align-items: start;
+        }
+        .featured-hotel__item--details div:last-child {
+            margin: 1rem 0 0 0;
+        }
     }
+   
     /* 25em = 400px when 16px */
     @media (max-width: 25em) {
         .deal {
@@ -843,4 +990,13 @@
     .facilities {
         justify-items: start;
     }
+    .featured-hotel__item--details {
+        flex-direction: row;
+        align-items: center;
+    }
+    .featured-hotel__item--details div:last-child {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
 }

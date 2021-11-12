@@ -1,325 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
-    <!-- owl carousel -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+		<link
+		rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+		<!-- owl carousel -->
 
-    <title>Azivo hotels</title>
-</head>
+		<title>Azivo hotels</title>
+	</head>
 
-<body>
-    <header class="header header-static">
-        
-        <div class="header-static--top">
-      <div class="header-static--logo">
-        <a class="logo-top" href="#index.html">
-            <img src="images/logo.svg" alt="Azivo hotels logo">
-        </a>
-    </div>
-        <nav class="header-static--main-nav main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__link"><a href="index.html">Home</a></li>
-                <li class="main-nav__link"><a href="hotels.html">Our hotels</a></li>
-                <li class="main-nav__link"><a href="booking.html">Booking</a></li>
-                <li class="main-nav__link"><a href="contact.html">Contact</a></li>
-                <li class="main-nav__link"><a href="login.html">Login / Sign in</a></li>
-            </ul>
-           
-        </nav>
-        <button class="header-static-mobile-nav btn-mobile-nav">
-            <img class="open-mobile-nav icon-mobile-nav" src="images/icons/nav/hamburger.svg" alt="Open mobile menu">
-            <img class="close-mobile-nav icon-mobile-nav" src="images/icons/nav/close_big.svg" alt="Close mobile menu">
-        </button>
-       
-    </div>
-        <div class="header-static--heading">
-           
-            <h2 class="header-static__head">Booking</h2>
-            <h4 class="header-static__subhead">Find your dream hotel</h4>
-        
-        </div>
-    </header>
- 
-    <section class="section-booking">
-        <img src="images/ornament.svg" class="ornament" alt="">
-        <h3 class="dark heading">
-            Welcome to Azivo hotels
-        </h3>
-    </section>
-    
-    <section class="section-welcome">
-        <img src="images/ornament.svg" class="ornament" alt="">
-        <h3 class="dark heading">
-            Welcome to Azivo hotels
-        </h3>
-        <div class="container cols-2 welcome-cols">
-            <div>
-                <p>Welcome to Azivo Hotels & Partners. You’ll find our hotels situated in prime locations all around the world, providing rest and relaxation that’s always close to the action. <br> Whether it’s a romantic escape or a family break, stay at
-                    a Azivo Hotel for the perfect combination of value for money, outstanding facilities, and efficient, always friendly service.</p>
-            </div>
-            <div>
-                <img src="images/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg" alt="">
-            </div>
-        </div>
-    </section>
+	<body>
+		<header class="header header-static">
+			<div class="header-static--top">
+				<div class="header-static--logo">
+					<a class="logo-top" href="#index.html">
+						<img src="images/logo.svg" alt="Azivo hotels logo">
+					</a>
+				</div>
+				<nav class="header-static--main-nav main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__link">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="hotels.html">Our hotels</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="booking.html">Booking</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="contact.html">Contact</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="login.html">Login / Sign in</a>
+						</li>
+					</ul>
 
+				</nav>
+				<button class="header-static-mobile-nav btn-mobile-nav">
+					<img class="open-mobile-nav icon-mobile-nav" src="images/icons/nav/hamburger.svg" alt="Open mobile menu">
+					<img class="close-mobile-nav icon-mobile-nav" src="images/icons/nav/close_big.svg" alt="Close mobile menu">
+				</button>
 
-    <section class="section-deals">
-        <img src="images/ornament.svg" class="ornament" alt="">
-        <h3 class="dark heading">
-            New deals now available
-        </h3>
-        <div class="deal-cols">
-            <div class="deal">
-                <img src="images/deals/deal22.png" alt="" class="deal__image">
-                <div class="deal-details">
-                    <p class="bolder-left">
-                        Special package for familes
-                    </p>
-                    <p class="deal-expiring">valid until 7/12</p>
-                    <a class="deal__link" href="#">Find out more</a>
+			</div>
+			<div class="header-static--heading">
+
+				<h2 class="header-static__head">Booking</h2>
+				<h4 class="header-static__subhead">Find your dream hotel</h4>
+
+			</div>
+		</header>
+
+		<section class="section-booking">
+			<aside class="booking-filters">
+				<div class="booking-filters--wrapper">
+					<h6>Filters</h6>
+					<form action="">
+						<div class="filters-form--wrapper">
+							<label for="region">
+								<strong>Region</strong>
+							</label>
+							<select name="region" class="booking-filters__select">
+								<option value="All">All world</option>
+								<option value="Europe">Europe</option>
+								<option value="Asia">Asia</option>
+								<option value="Africa">Africa</option>
+								<option value="America">America</option>
+							</select>
+
+							<div class="checkboxes-set">
+								<label for="facilities">
+									<strong>Facilities</strong>
+								</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Swimming pool</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Bar 24h</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Golf course</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Spa and Sauna</label>
+							</div>
+
+							<div class="checkboxes-set">
+								<label for="services">
+									<strong>Services</strong>
+								</label>
+								<label><input name="services" class="checkbox" type="checkbox">Shuttle bus</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Hairdresser</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Barber</label>
+
+							</div>
+						</div>
+						<button class="booking-filters__submit">
+							Apply filters
+						</button>
+					</form>
+
+				</div>
+			</aside>
+
+			<div class="hotels">
+                <div class="hotels-sorting">
+                    <select name="sorting" id="">
+                        <option value="match">Best match</option>
+                        <option value="price-hl">Price (high to low)</option>
+                        <option value="price-lh">Price (low to high)</option>
+                        <option value="popularity">Popularity</option>
+                    </select>
                 </div>
+                <div class="hotels--cards">
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
+				<div class="hotels--card">
+					<img src="images/deals/deal22.png" alt="" class="deal__image">
+					<div class="hotels--card-details">
+						<p class="bolder-left">Miroki</p>
+						<div class="hotels--card-details__location">
+							<img class="hotels--card__icon" src="images/icons/other/location_gray.svg" alt="Hotel location icon">
+							<span>Creete, Greeece</span>
+						</div>
+						<div class="hotels--card-details__pricing">
+							<img src="images/icons/credit_card_alt.svg" alt="Hotel's opening date">
+							<span>From $1440</span>
+						</div>
+
+					</div>
+					<a class="hotels--card__link" href="#">See availabilty</a>
+				</div>
             </div>
+			</div>
+		</section>
 
-            <div class="deal">
-                <img src="images/deals/shane-lynes-4HdJng3qeYo-unsplash.jpg" alt="" class="deal__image">
-                <div class="deal-details">
-                    <p class="bolder-left">
-                        Weekend for 2 with extras
-                    </p>
-                    <p class="deal-details--subtext">Enjoy your stay with spa and golf session.</p>
-                    <a class="deal__link" href="#">Find out more</a>
-                </div>
-            </div>
+		<footer class="footer">
+			<div class="container cols-4 footer--cols">
+				<div class="footer--column">
+					<img src="images/logo-dark.svg" alt="Azivo company logo" class="footer-logo">
+					<div class="footer-socials">
+						<a href="#"><img src="images/icons/social/facebook.svg" alt="Facebook icon"></a>
+						<a href="#"><img src="images/icons/social/instagram.svg" alt="Instagram icon"></a>
+						<a href="#"><img src="images/icons/social/google.svg" alt="Google icon"></a>
+					</div>
+					<p class="footer-copyright">Copyright &copy; 2021 by Azivo, Inc.<br>All rights reserved.</p>
+				</div>
 
-            <div class="deal">
-                <img src="images/deals/duy-pham-Cecb0_8Hx-o-unsplash.jpg" alt="" class="deal__image">
-                <div class="deal-details">
-                    <p class="bolder-left">
-                        Group special deals now available
-                    </p>
-                    <p class="deal-details--subtext">&nbsp;</p>
-                    <a class="deal__link" href="#">Find out more</a>
-                </div>
-            </div>
+				<div class="footer--column">
+					<h6>About us
+					</h6>
+					<p>Azivo is corporation group base in ZAE. For information please use contact page.</p>
+					<p>Terms and condition are available in hotels and on our website.</p>
+				</div>
 
-            <div class="deal">
-                <img src="images/deals/camille-brodard-VxAwTeiqDao-unsplash.jpg" alt="" class="deal__image">
-                <div class="deal-details">
-                    <p class="bolder-left">
-                        Stay 4 night get free spa
-                    </p>
-
-                    <p class="deal-details--subtext">Enjoy your stay with spa and golf session.</p>
-                    <a class="deal__link" href="#">Find out more</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section-facilities">
-        <img src="images/ornament.svg" class="ornament" alt="">
-        <h3 class="dark heading">
-            Our facilities
-        </h3>
-        <div class="container cols-4 facilities">
-
-            <div class="facilities-column">
-                <div class="facilities__item">
-                    <img src="images/icons/baggage.svg" alt="baggage icon">
-                    <p>Luggage locker</p>
-                </div>
-                <div class="facilities__item">
-
-                    <img src="images/icons/barbeque.svg" alt="barbaque icon">
-                    <p>Barbeque</p>
-                </div>
-            </div>
-
-            <div class="facilities-column">
-                <div class="facilities__item">
-                    <img src="images/icons/call_bell.svg" alt="call bell icon">
-                    <p>Call to hall</p>
-                </div>
-                <div class="facilities__item">
-
-                    <img src="images/icons/credit_card.svg" alt="credit card icon">
-                    <p>Pay by card</p>
-                </div>
-            </div>
-
-            <div class="facilities-column">
-                <div class="facilities__item">
-                    <img src="images/icons/direction.svg" alt="direction post icon">
-                    <p>Convenient location</p>
-                </div>
-                <div class="facilities__item">
-
-                    <img src="images/icons/mountains.svg" alt="view icon">
-                    <p>Beautiful views</p>
-                </div>
-            </div>
-
-            <div class="facilities-column">
-                <div class="facilities__item">
-                    <img src="images/icons/shopping.svg" alt="shopping centre icon">
-                    <p>Shopping mall</p>
-                </div>
-                <div class="facilities__item">
-
-                    <img src="images/icons/train.svg" alt="bus icon">
-                    <p>Shuttle bus</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-featured-hotels">
-        <div class="container cols-3 featured-hotels">
-
-            <div class="featured-hotels--heading">
-                <h3 class="light heading">
-                    Our new hotels
-                </h3>
-            </div>
-
-            <div class="featured-hotel__item">
-                <img src="images/hotels/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg" alt="featured hotel picture">
-                <p class="bolder-light">
-                    Lyrica hotel
-                </p>
-
-                <div class="featured-hotel__item--details">
-                    <div>
-                        <img src="images/icons/other/location.svg" alt="Hotel location icon">
-                        <span>Diro, Indonesia</span>
-                    </div>
-                    <div>
-                        <img src="images/icons/other/calendar_check.svg" alt="Hotel's opening date">
-                        <span>12 May 2020</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="featured-hotel__item">
-                <img src="images/hotels/markus-spiske-g5ZIXjzRGds-unsplash.jpg" alt="featured hotel picture">
-                <p class="bolder-light">
-                    Supera hotel
-                </p>
-
-                <div class="featured-hotel__item--details">
-                    <div>
-                        <img src="images/icons/other/location.svg" alt="Hotel location icon">
-                        <span>Havit, Morrocco</span>
-                    </div>
-                    <div>
-                        <img src="images/icons/other/calendar_check.svg" alt="Hotel's opening date">
-                        <span>7 September 2021</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="featured-hotel__item">
-                <img src="images/hotels/hello-lightbulb-YC8qqp50BdA-unsplash.jpg" alt="featured hotel picture">
-                <p class="bolder-light">
-                    Neptun hotel
-                </p>
-
-                <div class="featured-hotel__item--details">
-                    <div>
-                        <img src="images/icons/other/location.svg" alt="Hotel location icon">
-                        <span>Crete, Greece</span>
-                    </div>
-                    <div>
-                        <img src="images/icons/other/calendar_check.svg" alt="Hotel's opening date">
-                        <span>2 July 2029</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="section-testimonials">
-        <img src="images/ornament.svg" class="ornament" alt="">
-        <h3 class="dark heading">
-            What people say about us
-        </h3>
-        <div class="container cols-2 testimonial-cols">
-            <div class="testimonial__item">
-                <div class="testimonial__image--wrapper">
-                    <img src="images/people/person_1.jpg" alt="Portrait of person">
-                </div>
-                <p>“My busy schedule leaves little, if any, time for blogging and social media. The Lorem Ipsum Company has been a huge part of helping me grow my business through organic search and content marketing.”
-                </p>
-                <p class="testimonial__item--signature">
-                    Mia Kniff, Douglas
-                </p>
-            </div>
-
-            <div class="testimonial__item">
-                <div class="testimonial__image--wrapper">
-                    <img src="images/people/person_2.jpg" alt="Portrait of person">
-                </div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores cumque molestiae aliquam? Ratione quo consectetur saepe, iure magnam nesciunt quasi recusandae ex perferendis aut ipsam officia incidunt, omnis quibusdam temporibus.
-                </p>
-                <p class="testimonial__item--signature">
-                    Robert Dega, Warsaw
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container cols-4 footer--cols">
-            <div class="footer--column">
-                <img src="images/logo-dark.svg" alt="Azivo company logo" class="footer-logo">
-                <div class="footer-socials">
-                    <a href="#"><img src="images/icons/social/facebook.svg" alt="Facebook icon"></a>
-                    <a href="#"><img src="images/icons/social/instagram.svg" alt="Instagram icon"></a>
-                    <a href="#"><img src="images/icons/social/google.svg" alt="Google icon"></a>
-                </div>
-                <p class="footer-copyright">Copyright &copy; 2021 by Azivo, Inc.<br>All rights reserved.</p>
-            </div>
-
-            <div class="footer--column">
-                <h6>About us </h6>
-                <p>Azivo is corporation group base in ZAE. For information please use contact page.</p>
-                <p>Terms and condition are available in hotels and on our website.</p>
-            </div>
-
-            <div class="footer--column">
-                <h6>Your Azivo</h6>
-                <ul class="footer__list">
-                    <li><a href="login.php">Log in / Sign in</a></li>
-                    <li><a href="contact.php">Contact us </a></li>
-                    <li><a href="#">Terms and conds</a></li>
-                </ul>
-            </div>
-            <div class="footer--column">
-                <h6>Important links</h6>
-                <ul class="footer__list">
-                    <li><a href="index.html">Home page</a></li>
-                    <li><a href="hotels.html">Our hotels</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
-    <script src="js/custom.js "></script>
-
-</body>
-
+				<div class="footer--column">
+					<h6>Your Azivo</h6>
+					<ul class="footer__list">
+						<li>
+							<a href="login.php">Log in / Sign in</a>
+						</li>
+						<li>
+							<a href="contact.php">Contact us
+							</a>
+						</li>
+						<li>
+							<a href="#">Terms and conds</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer--column">
+					<h6>Important links</h6>
+					<ul class="footer__list">
+						<li>
+							<a href="index.html">Home page</a>
+						</li>
+						<li>
+							<a href="hotels.html">Our hotels</a>
+						</li>
+						<li>
+							<a href="booking.html">Booking</a>
+						</li>
+						<li>
+							<a href="#">Privacy policy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+		<script src="js/custom.js "></script>
+	</body>
 </html>

@@ -112,3 +112,6 @@ small,
 .text_small {
     font-size: 0.8rem;
 }
+strong {
+    font-family:'Gill Sans Medium', sans-serif;
+}

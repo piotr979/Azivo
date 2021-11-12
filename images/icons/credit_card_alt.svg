@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>basic / credit_card_alt</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+    </defs>
+    <g id="💙-coolicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Basic" transform="translate(-434.000000, -388.000000)">
+            <g id="basic-/-credit_card_alt" transform="translate(432.000000, 384.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="basic-/-credit_card_alt-(Background/Mask)"></g>
+                <path d="M18,13.5 C18,12.1192881 16.880712,11 15.5,11 C14.1192881,11 13,12.1192881 13,13.5 C13,14.880712 14.1192881,16 15.5,16 C16.880712,16 18,14.880712 18,13.5 Z M13,11.5120001 C12.581,11.1940001 12.065,11 11.5,11 C10.119,11 9,12.119 9,13.5 C9,14.881 10.119,16 11.5,16 C12.065,16 12.581,15.8059999 13,15.4879999 C12.396,15.0319999 12,14.315 12,13.5 C12,12.685 12.396,11.9680001 13,11.5120001 Z M4,4 C2.89699996,4 2,4.89699996 2,6 L2,18 C2,19.103 2.89699996,20 4,20 L20,20 C21.103,20 22,19.103 22,18 L22,6 C22,4.89699996 21.103,4 20,4 L4,4 Z M4,6 L20,6 L20.0020008,18 L4,18 L4,6 Z" fill="#7D7D7D" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
