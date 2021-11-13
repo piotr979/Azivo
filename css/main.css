@@ -59,6 +59,9 @@
         padding: .5rem 1rem;
         text-transform: uppercase;
     }
+    label {
+        font-size: 1.6rem;
+    }
     
     .btn-slider {
         transition: all .4s;
@@ -235,12 +238,23 @@
     
     input[type="date"],
     focus {
-        color: #95a5a6;
+        color: var(--gray-1);
         box-shadow: none;
+        padding-left: .5rem;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
     }
-    
+   select {
+        width: 15rem;
+        border: 1px solid var(--gray-4);
+        background-color: white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position: 100% 0px;
+    }
     .booking-mini__form {
         display: flex;
         gap: 4rem;
@@ -669,7 +683,9 @@
     padding-left: 1rem;
 }
 
-
+.booking {
+    grid-column: 1/-1;
+}
 
 .booking-filters label, .booking-aside label {
     display: block;
@@ -708,7 +724,7 @@ border: none;
 .booking-side-form--wrapper input[type="date"]
  {
     border: 1px solid var(--gray-4);
-    padding: .5rem 0;
+    padding: 1rem 0 .5rem .5rem;
 }
 .booking-filter--persons__wrapper {
     padding-top: 1rem;
@@ -885,7 +901,42 @@ border: none;
 .services--column {
     padding: .6rem 0;
 }
+.booking-form select, .booking-form__calendar-wrapper div label  {
+    display: block;
+}
+.booking {
+    margin-top:2rem;
+    border-top: 1px solid var(--gray-5);
+    padding-top: 1rem;
+}
 
+.booking-form select {
+    padding: .5rem;
+}
+.booking-form__calendar-wrapper div select {
+    
+    width: 6rem;
+}
+
+.booking-form__calendar-wrapper {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    gap: 8rem;
+}
+.booking-form__calendar-wrapper div label {
+    margin-top: 2rem;
+    padding-bottom: 1rem; 
+}
+.booking-form__calendar-wrapper div input {
+    border: 1px solid var(--gray-5);
+    width: 15rem;
+    padding: .7rem 0 .5rem .5rem;
+}
+.booking-form button {
+    padding: 1.2rem 3rem 1rem 3rem; 
+}
 /* **************************
 /* RESPONSIVE MEDIA
 /* ************************** 

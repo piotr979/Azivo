@@ -285,9 +285,59 @@
 				</div>
 
 
-				<div class="hotel--form">
-					<form action=""></form>
-				</div>
+				<section class="booking">
+					<form action="" class="booking-form">
+						<h3 class="booking-form__heading">Book a room</h3>
+						<select name="room" id="">
+							<option value="standard">Standard room</option>
+							<option value="standard">Premium room</option>
+							<option value="standard">Superior room</option>
+						</select>
+
+						<div class="booking-form__calendar-wrapper">
+							<div>
+								<label for="check-in">Check-in</label>
+								<input type="date">
+								<label for="check-in">Adults</label>
+								<select name="adults" id="">
+									<option value="1">1</option>
+									<option value="2" selected="selected">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+
+								</select>
+							</div>
+							<div>
+								<label for="check-in">Check-out</label>
+								<input type="date">
+								<label for="check-in">Kids</label>
+								<select name="kids" class="space-bottom-1">
+									<option value="0" selected="selected">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+
+								</select>
+							</div>
+						</div>
+
+
+						<button class="btn-primary">Book now</button>
+					</form>
+				</section>
 			</div>
 		</section>
 
