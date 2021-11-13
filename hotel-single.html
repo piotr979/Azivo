@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+		<link
+		rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+		<!-- owl carousel -->
+
+		<title>Azivo hotels</title>
+	</head>
+
+	<body>
+		<header class="header header-static">
+			<div class="header-static--top">
+				<div class="header-static--logo">
+					<a class="logo-top" href="index.html">
+						<img src="images/logo.svg" alt="Azivo hotels logo">
+					</a>
+				</div>
+				<nav class="header-static--main-nav main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__link">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="hotels.html">Our hotels</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="booking.html">Booking</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="contact.html">Contact</a>
+						</li>
+						<li class="main-nav__link">
+							<a href="login.html">Login / Sign in</a>
+						</li>
+					</ul>
+
+				</nav>
+				<button class="header-static-mobile-nav btn-mobile-nav">
+					<img class="open-mobile-nav icon-mobile-nav" src="images/icons/nav/hamburger.svg" alt="Open mobile menu">
+					<img class="close-mobile-nav icon-mobile-nav" src="images/icons/nav/close_big.svg" alt="Close mobile menu">
+				</button>
+
+			</div>
+			<div class="header-static--heading">
+
+				<h2 class="header-static__head">Booking</h2>
+				<h4 class="header-static__subhead">Find your dream hotel</h4>
+
+			</div>
+		</header>
+
+		<section class="section-booking container">
+			<aside class="booking-aside">
+				<div class="booking-filters--wrapper">
+					<h6>Find hotel</h6>
+					<form action="">
+						<div class="booking-side-form--wrapper">
+
+							<label for="check-in">Check-in</label>
+							<input type="date">
+							<label for="check-in">Check-out</label>
+							<input type="date">
+							<div class="booking-filter--persons__wrapper">
+								<div class="booking-filters--persons">
+									<label for="check-in">Adults</label>
+									<select name="adults" id="">
+										<option value="1">1</option>
+										<option value="2" selected="selected">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+
+									</select>
+
+								</div>
+
+								<div class="booking-filters--persons">
+									<label for="check-in">Kids</label>
+									<select name="kids" class="space-bottom-1">
+										<option value="0" selected="selected">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+
+									</select>
+								</div>
+							</div>
+							<label for="region">
+								<strong>Region</strong>
+							</label>
+							<select name="region" class="booking-filters__select">
+								<option value="All">All world</option>
+								<option value="Europe">Europe</option>
+								<option value="Asia">Asia</option>
+								<option value="Africa">Africa</option>
+								<option value="America">America</option>
+							</select>
+
+							<div class="checkboxes-set">
+								<label for="facilities">
+									<strong>Facilities</strong>
+								</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Swimming pool</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Bar 24h</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Golf course</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Spa and Sauna</label>
+							</div>
+
+							<div class="checkboxes-set">
+								<label for="services">
+									<strong>Services</strong>
+								</label>
+								<label><input name="services" class="checkbox" type="checkbox">Shuttle bus</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Hairdresser</label>
+								<label><input name="facilities" class="checkbox" type="checkbox">Barber</label>
+
+							</div>
+						</div>
+						<button class="booking-filters__submit">
+							Find hotels
+						</button>
+					</form>
+
+				</div>
+			</aside>
+
+			<div class="hotel">
+				<div class="hotel--heading">
+
+					<div class="hotel--heading__name">
+						<h5>Mirki hotel</h5>
+						<p>
+							<span class="star-full">&#9733</span>
+							<span class="star-dummy">&#9734;</span>
+						</p>
+
+						<p class="hotel--heading__location">
+							<img src="images/icons/other/location_gray.svg" alt="Location icon">
+							Crete, Greece
+						</p>
+					</div>
+
+					<div class="hotel--heading__action">
+						<a href="#" class="hotel--heading__action-link ">Reserve</a>
+					</div>
+				</div>
+				<div class="hotel-gallery">
+					<img class="gal-img-medium-1" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+					<img class="gal-img-medium-2" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+					<img class="gal-img-large" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+					<div class="gal-img-small__wrapper">
+						<img class="gal-img-small" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+						<img class="gal-img-small" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+						<img class="gal-img-small" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+						<img class="gal-img-small" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+						<img class="gal-img-small" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+						<img class="gal-img-small" src="images/hotels/miroki/ciudad-maderas-MXbM1NrRqtI-unsplash Copy 14.png" alt="">
+					</div>
+
+
+				</div>
+
+				<div class="hotel--others">
+					<p class="highlight">Pricing from p/n/p: $40</p>
+					<p class="highlight">Rating: 9.4</p>
+					<button class="btn-primary">Share</button>
+				</div>
+
+
+				<div class="hotel--room">
+					<p class="hotel--room__name">
+						Standard room
+					</p>
+					<p>Facilities</p>
+					<div class="hotel--room__services">
+
+						<div class="services--column">
+							<div class="services--service">
+								<img src="images/icons/services/Restaurant.svg" alt="">
+								<p>Breakfast</p>
+							</div>
+							<div class="services--service">
+								<img src="images/icons/services/TV.svg" alt="">
+								<p>Flat TV</p>
+							</div>
+						</div>
+
+						<div class="services--column">
+							<div class="services--service">
+								<img src="images/icons/services/clock.svg" alt="">
+								<p>Wake up service</p>
+							</div>
+
+							<div class="services--service">
+								<img src="images/icons/services/Shower.svg" alt="">
+								<p>Bathroom</p>
+							</div>
+						</div>
+
+						<div class="services--column">
+
+							<div class="services--service">
+								<img src="images/icons/services/Bed.svg" alt="">
+								<p>Double bed</p>
+							</div>
+							<div class="services--service">
+								<img src="images/icons/services/Coffee.svg" alt="">
+								<p>Coffee machine</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="hotel--room">
+					<p class="hotel--room__name">
+						Premium room
+					</p>
+					<p>Same features as Standard room plus:</p>
+					<div class="hotel--room__services">
+
+
+						<div class="services--service">
+							<img src="images/icons/services/Bathtub.svg" alt="">
+							<p>Bathtub</p>
+						</div>
+						<div class="services--service">
+							<img src="images/icons/services/kingbed.svg" alt="">
+							<p>King bed</p>
+						</div>
+
+
+						<div class="services--service">
+							<img src="images/icons/services/Minibar.svg" alt="">
+							<p>Minibar</p>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="hotel--room">
+					<p class="hotel--room__name">
+						Superior room
+					</p>
+					<p>Same features as Premium room plus:</p>
+					<div class="hotel--room__services">
+
+
+						<div class="services--service">
+							<img src="images/icons/services/Car.svg" alt="">
+							<p>Car valeting</p>
+						</div>
+						<div class="services--service">
+							<img src="images/icons/services/wasching_maschine.svg" alt="">
+							<p>Washing service</p>
+						</div>
+
+
+						<div class="services--service">
+							<img src="images/icons/services/Laptop safe.svg" alt="">
+							<p>Laptop safe</p>
+						</div>
+
+
+					</div>
+				</div>
+
+
+				<div class="hotel--form">
+					<form action=""></form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container cols-4 footer--cols">
+				<div class="footer--column">
+					<img src="images/logo-dark.svg" alt="Azivo company logo" class="footer-logo">
+					<div class="footer-socials">
+						<a href="#"><img src="images/icons/social/facebook.svg" alt="Facebook icon"></a>
+						<a href="#"><img src="images/icons/social/instagram.svg" alt="Instagram icon"></a>
+						<a href="#"><img src="images/icons/social/google.svg" alt="Google icon"></a>
+					</div>
+					<p class="footer-copyright">Copyright &copy; 2021 by Azivo, Inc.<br>All rights reserved.</p>
+				</div>
+
+				<div class="footer--column">
+					<h6>About us
+					</h6>
+					<p>Azivo is corporation group base in ZAE. For information please use contact page.</p>
+					<p>Terms and condition are available in hotels and on our website.</p>
+				</div>
+
+				<div class="footer--column">
+					<h6>Your Azivo</h6>
+					<ul class="footer__list">
+						<li>
+							<a href="login.php">Log in / Sign in</a>
+						</li>
+						<li>
+							<a href="contact.php">Contact us
+							</a>
+						</li>
+						<li>
+							<a href="#">Terms and conds</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer--column">
+					<h6>Important links</h6>
+					<ul class="footer__list">
+						<li>
+							<a href="index.html">Home page</a>
+						</li>
+						<li>
+							<a href="hotels.html">Our hotels</a>
+						</li>
+						<li>
+							<a href="booking.html">Booking</a>
+						</li>
+						<li>
+							<a href="#">Privacy policy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+		<script src="js/custom.js "></script>
+	</body>
+</html>
