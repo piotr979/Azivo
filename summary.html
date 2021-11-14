@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Login page</title>
+</head>
+
+<body>
+    <section class="summary">
+        <div class="summary-data">
+            <h2>Order details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Check in</td>
+                        <td>Check out</td>
+                        <td>Adults</td>
+                        <td>Kids</td>
+                        <td>Hotel name</td>
+                        <td>Price total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            03-04-2020
+                        </td>
+                        <td>
+                            08-04-2020
+                        </td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>Mikro</td>
+                        <td>$3406</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form class="summary__form" action="#">
+                <div class="cols-2 summary__form--address">
+                    <div>
+                        <label for="nane">First name</label>
+                        <input type="text" name="first_name">
+                        <label for="nane">Last name</label>
+                        <input type="text" name="last_name">
+                        <label for="nane">Zip code</label>
+                        <input type="number" name="zip_code">
+
+                    </div>
+                    <div>
+
+
+                        <label for="nane">Street address 1</label>
+                        <input type="text" name="street_1">
+                        <label for="nane">Street address 2</label>
+                        <input type="text" name="street_2">
+                        <label for="nane">City name</label>
+                        <input type="text" name="city_name">
+
+
+                    </div>
+                </div>
+                <div class="cc-details space-bottom">
+                    <h2>Credit card details</h2>
+                    <label for="nane">Credit card number</label>
+                    <input type="text" name="cc_number">
+                    <div class="cc-details--values">
+                        <div>
+                            <label for="nane">Expiration date</label>
+                            <input type="text" name="exp_date">
+                        </div>
+                        <div>
+                            <label for="nane">CCV number</label>
+                            <input type="number" name="ccv_number">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-primary">Place order</button>
+            </form>
+        </div>
+
+        <div class="user-action">
+            <h2>Login</h2>
+            <p>Please enter your crendentials.</p>
+            <p>New to Azivo?
+                <a href="register.html">Register here.</a>
+            </p>
+
+            <div class="login-page__inputs">
+                <form class="login__form" action="POST">
+                    <label for="username">Username</label>
+                    <input type="text">
+                    <label for="password">Password</label>
+                    <input type="text">
+                    <button class="btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
