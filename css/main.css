@@ -9,7 +9,9 @@
         overflow-x: hidden;
     }
    
-
+    input ~ label {
+        padding-top: 1rem;
+    }
     * {
         padding: 0;
         margin: 0;
@@ -653,6 +655,23 @@
 .booking-filters, .booking-aside {
     grid-column: 1/2;
 }
+.filters-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cta-close {
+    padding-right: 1rem;
+    border: none;
+    background: none;
+    display: none;
+}
+.close-aside-nav {
+    width: 20px;
+    height: auto;
+
+}
 .booking-filters--wrapper {
     border: 1px solid var(--gray-5);
     padding-top: 1rem;
@@ -676,13 +695,17 @@
 .booking-filters h6, .booking-aside h6 {
     display: block;
     padding-left: 1rem;
+    padding-top: 1rem;
     color: var(--gray-1);
-    padding-bottom: 2rem;
 }
 .filters-form--wrapper, .booking-side-form--wrapper {
     padding-left: 1rem;
+    padding-top: 2rem;
 }
-
+.filters-form--wrapper label:first-child {
+    padding: 2rem 0 2rem 0;
+    display: block;
+}
 .booking {
     grid-column: 1/-1;
 }
@@ -690,7 +713,7 @@
 .booking-filters label, .booking-aside label {
     display: block;
     font-size: 1.6rem;
-    padding: 1rem 0 1rem 0rem;
+    padding: 2rem 0 1rem 0rem;
 }
 .booking-filters label input, .booking-aside label input {
     margin-right: 1rem;
@@ -849,14 +872,15 @@ border: none;
 }
 .gal-img-small__wrapper {
     width:100%;
-    grid-column: 1/7;
+    grid-column: 1/-1;
     grid-row: 3/4;
     display: flex;
     flex-direction: row;
     gap: .5rem;
 }
 .gal-img-small {
-    width:100%;
+    width: 16.2%;
+
 }
 .hotel--others {
     grid-column: 1/-1;
@@ -881,7 +905,7 @@ border: none;
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 1rem 0 1rem 1rem;
+    padding: 2rem 0 1rem 1rem;
     gap: 10rem;
     background-color: #F8F8F8;
 }
@@ -937,6 +961,21 @@ border: none;
 .booking-form button {
     padding: 1.2rem 3rem 1rem 3rem; 
 }
+.pagination {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+}
+.pagination__link:link,
+.pagination__link:visited {
+    border: 1px solid var(--gray-5);
+    padding: .7rem 1rem .4rem 1rem;
+    color: var(--gray-2);
+}
+
 /* **************************
 /* RESPONSIVE MEDIA
 /* ************************** 
@@ -1025,7 +1064,8 @@ border: none;
     }
     @media (max-width: 56em) {
        .booking-aside,  .booking-filters {
-            display: none;
+          
+            background-color: white;
         }
         .hotel, .hotels {
             grid-column: 1/-1;
@@ -1047,7 +1087,7 @@ border: none;
             justify-content: flex-start;
         }
         .hotels--card {
-            max-width: 45%;
+            max-width: 44%;
         }
         .hotel--room__services {
             flex-direction: column;
@@ -1093,8 +1133,33 @@ border: none;
 
             background: var(--primary-color);
             transition: all .5s ease-in;
-        }
+        } 
         .nav-open .main-nav {
+            opacity: 1;
+            pointer-events: auto;
+            visibility: visible;
+            transform: translateX(0);
+        }
+        .booking-filters {
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            transform: translateX(-100%);
+
+            /* Hide all */
+            opacity: 0;
+            /* We need to hide mouse and keyboard */
+            pointer-events: none;
+            /* Hide from screen readers */
+            visibility: hidden;
+
+            background: white;
+            transition: all .5s ease-in;
+        }
+        .aside-open .booking-filters {
             opacity: 1;
             pointer-events: auto;
             visibility: visible;
@@ -1120,6 +1185,11 @@ border: none;
     .main-nav__link a {
         font-size: 1.8rem;
     }
+    .cta-close {
+        display: block;
+        cursor: pointer;
+    }
+   
     }
     /** 48em = 768 px when 16px */
     @media (max-width: 48em) {
@@ -1174,6 +1244,7 @@ border: none;
     
 }
 
+    /* 608 px */
 
     @media (max-width: 38em) {
       
@@ -1202,13 +1273,13 @@ border: none;
             gap: 2rem;
            
         }
+        .booking-form__calendar-wrapper {
+            gap: 4rem;
+        }
     }
    
     /* 25em = 400px when 16px */
     @media (max-width: 25em) {
-        .hotels--cards {
-            justify-content: center;
-        }
         .deal {
             max-width: 90%;
         }
@@ -1281,8 +1352,8 @@ border: none;
         margin-top: 0;
         margin-left: auto;
     }
-    .hotels-sorting {
-        justify-content: center;
+    .booking-form__calendar-wrapper div input {
+        width: 12rem;
     }
     }
     

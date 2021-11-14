@@ -19,9 +19,8 @@
 
   const btnNav = document.querySelector(".btn-mobile-nav");
   const header = document.getElementsByTagName("header").item(0);
-  console.log("Test");
+  console.log(header);
   btnNav.addEventListener("click", function () {
-    console.log("Test");
     header.classList.toggle("nav-open");
   });
 
@@ -66,6 +65,22 @@
     );
   }
 })();
+
+const closeButton = document.getElementById('cta-close');
+
+const sectionBooking = document.getElementById('section-booking');
+const filtersButton = document.getElementById('cta-filters');
+let z = 0;
+closeButton.addEventListener('click', function() {
+  console.log("testujemy");
+  console.log(z++);
+  sectionBooking.classList.remove('aside-open');
+});
+
+filtersButton.addEventListener('click', function() {
+  sectionBooking.classList.add('aside-open');
+});
+
 
 // owl.on('changed.owl.carousel', function (event) {
 //     var item = event.item.index - 2;     // Position of the current item

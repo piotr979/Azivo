@@ -57,10 +57,16 @@
 			</div>
 		</header>
 
-		<section class="section-booking container">
-			<aside class="booking-filters">
+		<section id="section-booking" class="section-booking container">
+			<aside class="booking-filters" >
 				<div class="booking-filters--wrapper">
+					<div class="filters-nav">
 					<h6>Filters</h6>
+
+					<button id="cta-close" class="cta-close">
+						<img class="close-aside-nav" src="images/icons/nav/close_dark.svg" alt="Close mobile menu">
+					</button>
+				</div>
 					<form action="">
 						<div class="filters-form--wrapper">
 							<label for="region">
@@ -104,7 +110,7 @@
 
 			<div class="hotels">
                 <div class="hotels-sorting">
-					<button class="cta-filters btn-primary">Filters</button>
+					<button id="cta-filters" class="cta-filters btn-primary">Filters</button>
                     <select name="sorting" id="">
                         <option value="match">Best match</option>
                         <option value="price-hl">Price (high to low)</option>
@@ -258,9 +264,17 @@
 					<a class="hotels--card__link" href="#">See availabilty</a>
 				</div>
             </div>
-
-			
+			<div class="pagination">
+			<a class="pagination__link" href="#">First</a>
+			<a class="pagination__link" href="#">1</a>
+			<a class="pagination__link" href="#">2</a>
+			<a class="pagination__link" href="#">3</a>
+			<a class="pagination__link" href="#">4</a>
+			<a class="pagination__link" href="#">5</a>
+			<a class="pagination__link" href="#">Last</a>
+		</div>
 			</div>
+			
 		</section>
 
 
